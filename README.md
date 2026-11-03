@@ -1,4 +1,4 @@
-# Medical Search using NFCorpus — FastAPI Backend
+# Medical Search using NFCorpus
 
 A modular, production-ready **FastAPI application** and **Information Retrieval (IR) system** built on the **NFCorpus dataset** (a medical IR benchmark from BeIR). 
 
