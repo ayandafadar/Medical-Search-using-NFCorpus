@@ -1,0 +1,312 @@
+/* Comparison Page & Tables */
+.metrics-summary-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.metric-kpi-card {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 1.25rem 1.5rem;
+  box-shadow: var(--shadow-sm);
+
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.kpi-icon-box {
+  width: 46px;
+  height: 46px;
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.kpi-icon-box.primary {
+  background-color: var(--primary-light);
+  color: var(--primary);
+}
+
+.kpi-icon-box.teal {
+  background-color: var(--teal-light);
+  color: var(--teal);
+}
+
+.kpi-icon-box.amber {
+  background-color: var(--amber-light);
+  color: var(--amber);
+}
+
+.kpi-icon-box.violet {
+  background-color: var(--violet-light);
+  color: var(--violet);
+}
+
+.kpi-content span {
+  font-size: 0.775rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  letter-spacing: 0.05em;
+}
+
+.kpi-content h3 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--text-main);
+  line-height: 1.2;
+}
+
+.kpi-content p {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+}
+
+.table-card {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  overflow: hidden;
+  margin-bottom: 2rem;
+}
+
+.table-header-bar {
+  padding: 1.25rem 1.5rem;
+  border-bottom: 1px solid var(--border-color);
+  background-color: var(--bg-subtle);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.table-header-bar h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text-main);
+}
+
+.table-container {
+  overflow-x: auto;
+}
+
+.comparison-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 0.925rem;
+}
+
+.comparison-table th {
+  background-color: var(--bg-surface);
+  padding: 1rem 1.25rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  border-bottom: 2px solid var(--border-color);
+
+  white-space: nowrap;
+}
+
+.comparison-table td {
+  padding: 1rem 1.25rem;
+  border-bottom: 1px solid var(--border-light);
+  color: var(--text-main);
+}
+
+.comparison-table tr:hover td {
+  background-color: var(--bg-subtle);
+}
+
+.table-cell-metric {
+  font-family: var(--font-mono);
+  font-weight: 600;
+  text-align: right;
+}
+
+.cell-winner {
+  background-color: #FEF3C7 !important;
+  color: #92400E;
+  font-weight: 700;
+  border-radius: var(--radius-sm);
+  padding: 0.2rem 0.5rem;
+  display: inline-block;
+}
+
+.model-badge-inline {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.25rem 0.65rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.model-badge-inline.rrf {
+  background-color: var(--amber-light);
+  color: var(--amber);
+  border: 1px solid var(--amber-border);
+}
+
+.model-badge-inline.semantic {
+  background-color: var(--violet-light);
+  color: var(--violet);
+  border: 1px solid var(--violet-border);
+}
+
+.model-badge-inline.bm25 {
+  background-color: var(--teal-light);
+  color: var(--teal);
+  border: 1px solid var(--teal-border);
+}
+
+.model-badge-inline.tfidf {
+  background-color: var(--primary-light);
+  color: var(--primary);
+  border: 1px solid var(--primary-border);
+}
+
+.methodology-box {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: 1.75rem;
+  box-shadow: var(--shadow-sm);
+  margin-top: 2rem;
+}
+
+.methodology-box h3 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--text-main);
+  margin-bottom: 0.75rem;
+}
+
+.methodology-box p {
+  font-size: 0.925rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.metric-definition-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.metric-def-item {
+  background-color: var(--bg-subtle);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 1rem 1.25rem;
+}
+
+.metric-def-item h4 {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--text-main);
+  margin-bottom: 0.25rem;
+}
+
+.metric-def-item p {
+  font-size: 0.825rem;
+  color: var(--text-muted);
+  margin-bottom: 0;
+}
+
+/* Precision Recall Chart Card */
+.chart-card {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: 1.75rem;
+  box-shadow: var(--shadow-md);
+  margin-bottom: 2rem;
+}
+
+.chart-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.chart-title-group h3 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--text-main);
+}
+
+.chart-title-group p {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.chart-container {
+  width: 100%;
+  height: 420px;
+  position: relative;
+}
+
+/* About Page Styles */
+.about-hero {
+  background: linear-gradient(135deg, var(--primary-light), var(--teal-light));
+  border: 1px solid var(--primary-border);
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+.about-hero h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-main);
+  margin-bottom: 0.5rem;
+}
+
+.about-hero p {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.about-card {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 1.5rem;
+  box-shadow: var(--shadow-sm);
+}
+
+.about-card h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text-main);
+  margin-bottom: 0.75rem;
+
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.about-card p {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
